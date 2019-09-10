@@ -11,4 +11,12 @@ https://www.tensorflow.org/tutorials/keras/basic_classification
 https://colab.research.google.com/github/nikhomgithub/tfSciPy2018/blob/master/fashionmnist.ipynb
 https://colab.research.google.com/github/nikhomgithub/tfSciPy2018/blob/master/mnist.ipynb
 
-Google Machine Learning Crash Course
+Google Machine Learning Crash Course   ==> To learn basic of machine learning
+(just concept , no need to learn old-version code)
+
+https://distill.pub/  ==> to learn pattern learning inside ML 
+
+Deep Learning with Python by Francios Chollet  ==> Book about Keras library (writer)
+
+https://www.youtube.com/watch?v=AoeEHqVSNOw  ==> learni k-nearest neighbors
+Writing Our First Classifier - Machine Learning Recipes #5
