@@ -45,6 +45,7 @@ https://pair-code.github.io/facets/   ==> for data visualization
 TensorFlow wide & deep learning tutorial
 https://ai.googleblog.com/2016/06/wide-deep-learning-better-together-with.html
 
+https://youtu.be/Xmw9SWJ0L50
 
 
 
