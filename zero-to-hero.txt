@@ -1,0 +1,112 @@
+Machine Learning
+
+Owner programming
+Rule+Data => traditional programing => Answer
+
+Machine Learning
+Answer+Data => Machine Learning => Rule
+
+
+Rocke&Paper&Scissor
+===================
+
+model = tf.keras.models(Squential([
+    tf.keras.layers.Flatten(input_shape=(150,150,3)),   //input =150,150,3
+    tf.keras.layers.Dense(512,activation='relu'),       //middle layer = 512 node
+    tf.keras.layers.Dense(3,activation='softmax')       //output = 3
+]))
+
+model.compile(loss='categorical_crossentropy',optimizer='rmsprop') //loss(check how good & bad) & optimizer(make better)
+
+model.fit(...,epochs=100)
+
+
+Convolutions
+============
+-1  0  1
+-2  0  2   => Vertical line filter
+-1  0  1
+
+-1  -2  -1
+ 0   0   0 => Horizontal line filter
+ 1   2   1 
+
+ Image Value         Filter      ==>   pooling
+0    64  128     -1    0    -2
+48  192  144     .5  4.5  -1.5
+142 226  168    1.5    2    -3   
+
+CURRENT_PIXEL_VALUE = 192
+NEW_PIXEL_VALUE =  -1*0  +    0*64  +   -2*128
+                  .5*48  + 4.5*192  + -1.5*144
+                 1.5*42  +   2*226  +   -3*168
+
+
+Pooling = compressing Image
+
+  Take bigger value of each box
+  Image compress from 16*16 to be 4*4 
+  (reduce 75% image size )
+
+image pixel               max pool
+0    64  | 128  128
+48   192 | 144  144       192 | 144
+--------------------   =>  --------
+142  226 | 168  0         255 | 168   
+255  0   | 0    64
+
+
+===============================
+Convolution Code
+model = tf.keras.models.Sequential([
+    tf.keras.layers.Conv2D(64,(3*3),activation='relu', input_shape=(150,150,3)),
+    tf.keras.layers.MaxPooling(2,2),
+    tf.keras.layers.Conv2D(64,(3*3),activation='relu'),
+    tf.keras.layers.MaxPooling(2,2),
+    tf.keras.layers.Conv2D(64,(3*3),activation='relu'),
+    tf.keras.layers.MaxPooling(2,2),
+    tf.keras.layers.Conv2D(64,(3*3),activation='relu'),
+    tf.keras.layers.MaxPooling(2,2),
+    tf.keras.layers.Flatten(),
+    tf.keras.layers.Dropout(0.5),
+    tf.keras.layers.Dense(512,activation='relu'),
+    tf.keras.layers.Dense(3,activation='softmax') //3 = final output
+])
+
+model.compile(loss='categorical_crossentropy',optimizer='rmsprop')
+model.fit(...)
+
+Layer(type)               Output Shape                   Param#
+input image                  150,150,3                         
+conv2d (Conv2D)         None,148,148,64                   1792
+max_pooling2d           None, 74, 47,64                     0
+conv2d_1 (Conv2D)       None, 72, 72,64                   36928
+max_pooling2d           None, 36, 36,64                     0
+conv2d_3 (Conv2D)       None, 34, 34,128                  73856
+max_pooling2d           None, 17, 17,128                    0
+conv2d (Conv2D)         None, 15, 15,128                  147584
+max_pooling2d           None,  7,  7,128                    0      //small pattern of feature
+flatten                 None, 6272                          0
+dropout                 None, 6272                          0
+dense                   None, 512                         3211776
+dense_1                 None, 3                           1539          
+
+
+
+
+
+
+
+
+https://www.youtube.com/watch?v=tYYVSEHq-io
+Getting Started with TensorFlow and Deep Learning | SciPy 2018 Tutorial | Josh Gordon
+=====================================================================================
+github.com/tensorflow/workshops
+
+API styles
+----------
+tf.keras    //keras is api specification, 
+Estimators
+Eager execution
+Defferred execution
+
