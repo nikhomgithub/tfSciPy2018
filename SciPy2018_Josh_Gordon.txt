@@ -2,7 +2,7 @@ https://www.tensorflow.org/tutorials/keras/basic_classification
 
 Edit , Network Setting , GPU+Python3
 
-https://colab.research.google.com
+https://colab.research.google.com      ==> for notebook in cloud for any program code 
 
 https://github.com/tensorflow/workshops
 
