@@ -48,6 +48,7 @@ https://ai.googleblog.com/2016/06/wide-deep-learning-better-together-with.html
 
 Wide & Deep Learning
 ===================
+https://ai.googleblog.com/2016/06/wide-deep-learning-better-together-with.html
 https://youtu.be/Xmw9SWJ0L50
 wide linear model (for memorization)
  deep neural network (for generalization),
