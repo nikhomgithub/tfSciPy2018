@@ -6,7 +6,9 @@ https://colab.research.google.com      ==> for notebook in cloud for any program
 
 https://github.com/tensorflow/workshops
 
-mnist
+
+mnist & fashion mnist
+=====================
 https://www.tensorflow.org/tutorials/keras/basic_classification
 https://colab.research.google.com/github/nikhomgithub/tfSciPy2018/blob/master/fashionmnist.ipynb
 https://colab.research.google.com/github/nikhomgithub/tfSciPy2018/blob/master/mnist.ipynb
@@ -23,7 +25,12 @@ Writing Our First Classifier - Machine Learning Recipes #5
 
 decission tree ==> learn how to use decission tree for classification 
 
+Hyper parameter : such as number of layers, epoch 
 
+
+IMDB
+====
 https://www.tensorflow.org/tutorials/keras/basic_text_classification
 Text classification with movie reviews
 
+https://magenta.tensorflow.org/  ==> tensorflow for art project, draw-image-auto-complete 
