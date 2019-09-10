@@ -10,3 +10,5 @@ mnist
 https://www.tensorflow.org/tutorials/keras/basic_classification
 https://colab.research.google.com/github/nikhomgithub/tfSciPy2018/blob/master/fashionmnist.ipynb
 https://colab.research.google.com/github/nikhomgithub/tfSciPy2018/blob/master/mnist.ipynb
+
+Google Machine Learning Crash Course
