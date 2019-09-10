@@ -18,5 +18,7 @@ https://distill.pub/  ==> to learn pattern learning inside ML
 
 Deep Learning with Python by Francios Chollet  ==> Book about Keras library (writer)
 
-https://www.youtube.com/watch?v=AoeEHqVSNOw  ==> learni k-nearest neighbors
+https://www.youtube.com/watch?v=AoeEHqVSNOw  ==> learn k-nearest neighbors which is pure python code
 Writing Our First Classifier - Machine Learning Recipes #5
+
+decission tree ==> learn how to use decission tree for classification 
