@@ -1,51 +1,12 @@
-mnist
-======
 https://www.tensorflow.org/tutorials/keras/basic_classification
 
-Edit , Network Setting
+Edit , Network Setting , GPU+Python3
 
+https://colab.research.google.com
 
-import tensorflow as tf
-from tensorflow import keras
-import numpy as np
-import matplotlib.pyplot as plt
+https://github.com/tensorflow/workshops
 
-print(tf.__version__)
-
-fashion_mnist=keras.datasets.fashion_mnist
-(train_images,train_labels),(test_images,test_labels)=fashion_mnist.load_data()
-
-train_images.shape   //(6000,28,28)
-
-train_labels.shape   //(60000)
-
-test_images.shape    //(10000, 28, 28)
-
-len(test_labels)     //10000
-
-class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
-               'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
-
-train_labels    //array([9, 0, 0, ..., 3, 0, 5], dtype=uint8)
-
-
-//To see picture
-plt.figure()
-plt.imshow(train_images[0])
-plt.colorbar()
-plt.gca().grid(False)
-
-//Normalize
-train_images=train_images/255.0
-test_images=test_images/255.0
-
-plt.figure(figsize=(10,10))
-for i in range(25):
-  plt.subplot(6,6,i+1)
-  plt.xticks([])
-  plt.yticks([])
-  plt.grid('off')
-  plt.imshow(train_images[i],cmap=plt.cm.binary)
-  plt.xlabel(class_names[train_labels[i]])
-
-
+mnist
+https://www.tensorflow.org/tutorials/keras/basic_classification
+https://colab.research.google.com/github/nikhomgithub/tfSciPy2018/blob/master/fashionmnist.ipynb
+https://colab.research.google.com/github/nikhomgithub/tfSciPy2018/blob/master/mnist.ipynb
