@@ -6,7 +6,7 @@ https://colab.research.google.com      ==> for notebook in cloud for any program
 
 https://github.com/tensorflow/workshops
 
-mnist & fashion mnist (classification) 
+mnist & fashion mnist (image classification) 
 =====================
 https://www.tensorflow.org/tutorials/keras/basic_classification
 https://colab.research.google.com/github/nikhomgithub/tfSciPy2018/blob/master/fashionmnist.ipynb
@@ -27,7 +27,7 @@ decission tree ==> learn how to use decission tree for classification
 Hyper parameter : such as number of layers, epoch 
 
 
-IMDB (classification)
+IMDB (text classification (negative or positive review)
 ====
 https://www.tensorflow.org/tutorials/keras/basic_text_classification
 Text classification with movie reviews
@@ -36,9 +36,14 @@ https://colab.research.google.com/drive/1-ptaZ76TBi4PxzUMOrzrHTqdsLj7SS7n#scroll
 
 https://magenta.tensorflow.org/  ==> tensorflow for art project, draw-image-auto-complete 
 
+
 housing price (regression to predict number) 
 =============
+predict price of house based on feature (room, bathroom, location) 
+https://pair-code.github.io/facets/   ==> for data visualization
 
+TensorFlow wide & deep learning tutorial
+https://ai.googleblog.com/2016/06/wide-deep-learning-better-together-with.html
 
 
 
